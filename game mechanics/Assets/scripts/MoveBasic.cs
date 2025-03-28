@@ -17,12 +17,14 @@ public class MoveBasic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         /*Vector3 positionUpdate = transform.position + Input.GetAxis("Vertical") * transform.forward * speed * Time.deltaTime;
+         Vector3 positionUpdate = transform.position + Input.GetAxis("Vertical") * transform.forward * speed * Time.deltaTime;
          transform.position = positionUpdate;
-         transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0)); */
+         transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0)); 
+         //Vector3 positionUpdate2 = transform.position + Input.GetAxis("Horizontal") * transform.forward * speed * Time.deltaTime;
+         //transform.position += positionUpdate2;
 
         //rb.AddForce(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed);
-        rb.MovePosition(transform.position + new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed * Time.deltaTime);
+        //rb.MovePosition(transform.position + new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed * Time.deltaTime);
         //rb.velocity = new Vector3(0, rb.velocity.y, 0);
     }
 }
